@@ -1,4 +1,4 @@
-function binarySearch<T> (list: T[], target: T): number | null {
+function binarySearch<T> (list: T[], target: T): number {
   let low = 0
   let high = list.length - 1
 
@@ -17,10 +17,11 @@ function binarySearch<T> (list: T[], target: T): number | null {
     }
   }
   
-  return null
+  return -1
 }
 
 const list = [10, 20, 30, 40, 50]
 
 console.log(binarySearch(list, 0))
 console.log(binarySearch(list, 10))
+console.log(binarySearch(list, 50))
